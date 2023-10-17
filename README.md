@@ -24,11 +24,12 @@ https://www.youtube.com/watch?v=yBDHkveJUf4
 
 - First iteration:
 
-![First iteration](/static/images/evolution_website/Screenshot 2023-10-11 at 17.09.18.png)
+<img width="1256" alt="Screenshot 2023-10-11 at 17 09 18" src="https://github.com/pipegalera/NBA-website-project/assets/15091899/d9d9a53b-3157-4146-90fd-f990894458be">
+
 
 - Second iteration:
 
-![Second iteration](/static/images/evolution_website/Screenshot 2023-10-12 at 22.22.17.png)
 
+<img width="1268" alt="Screenshot 2023-10-12 at 22 22 17" src="https://github.com/pipegalera/NBA-website-project/assets/15091899/72c0020c-f60e-4c75-a1b9-3f37932b2f75">
 
 
