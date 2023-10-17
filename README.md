@@ -1,5 +1,4 @@
 
-## Steps
 
 1.	Buy domain
 2.	Retrieve game data via NBA api
@@ -25,8 +24,11 @@ https://www.youtube.com/watch?v=yBDHkveJUf4
 
 - First iteration:
 
-![First iteration](/Users/pipegalera/Documents/GitHub/NBA-website-project/static/images/evolution_website/Screenshot 2023-10-11 at 17.09.18.png)
+![First iteration](/static/images/evolution_website/Screenshot 2023-10-11 at 17.09.18.png)
 
 - Second iteration:
 
-![Second iteration](/Users/pipegalera/Documents/GitHub/NBA-website-project/static/images/evolution_website/Screenshot 2023-10-12 at 22.22.17.png)
+![Second iteration](/static/images/evolution_website/Screenshot 2023-10-12 at 22.22.17.png)
+
+
+
