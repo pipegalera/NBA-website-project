@@ -1,0 +1,7 @@
+pandas
+sqlmodel
+mysqlclient
+mysql-connector-python
+nba_api
+PIL
+svglib
