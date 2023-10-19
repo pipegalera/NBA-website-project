@@ -3,13 +3,24 @@ from sqlmodel import create_engine, Session
 from datetime import datetime
 from sqlalchemy.dialects.mysql import insert
 import numpy as np 
+import os 
+import json 
 
 # adding nba_scraper folder
 import sys
 PATH = '/Users/pipegalera/Documents/GitHub/NBA-website-project'
 sys.path.insert(0, PATH)
 import nba_scraper.last_games as last_games
-from credentials_aws import admin_info
+
+def read_credentials(credentials_path = 'sql/credentials_aws.json') -> dict:
+    filename = os.path.join(credentials_path)
+    try:
+        with open(filename, mode='r') as f:
+            return json.loads(f.read())
+    except FileNotFoundError:
+        return {}
+
+admin_info = read_credentials()
 
 def aws_engine(admin_info: dict = admin_info, echo=True):
 

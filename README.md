@@ -25,21 +25,11 @@ https://www.youtube.com/watch?v=yBDHkveJUf4
 
 - First iteration:
 
-<<<<<<< Updated upstream
-<img width="1256" alt="Screenshot 2023-10-11 at 17 09 18" src="https://github.com/pipegalera/NBA-website-project/assets/15091899/d9d9a53b-3157-4146-90fd-f990894458be">
-
-
-- Second iteration:
-
-
-<img width="1268" alt="Screenshot 2023-10-12 at 22 22 17" src="https://github.com/pipegalera/NBA-website-project/assets/15091899/72c0020c-f60e-4c75-a1b9-3f37932b2f75">
-=======
 ![First iteration](https://raw.githubusercontent.com/pipegalera/NBA-website-project/main/static/images/evolution_website/Screenshot%202023-10-11%20at%2017.09.18.png)
 
 - Second iteration:
 
 ![Second iteration](https://raw.githubusercontent.com/pipegalera/NBA-website-project/main/static/images/evolution_website/Screenshot%202023-10-12%20at%2022.22.17?token=GHSAT0AAAAAACILUN2DILZLIUYW7LB623LWZJO4ZEA.png)
 
->>>>>>> Stashed changes
 
 
