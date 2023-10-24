@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA website</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/output.css') }}">
+</head>
+<body>
+  
+<div class = "m-8">
+  
+<h1 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-neutral-600">MVP</span> of the Game.</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl ">Face to face comparison between players, every game, every day.</p>
+
+</div>
+
+<div class="flex flex-wrap">
+  {% for logo in teams_logos %}
+    <img src="{{ url_for('static', path='/images/teams_logos/' + logo) }}" class="image"  width="120" height="100"/>
+  {% endfor %}
+</div>
+
+<div class="">
+  {% for player in players[:2] %}
+<img src="static/images/players_images/{{player.personId}}.png" width="250" height="180" alt = "{{player.name}}">
+<p>{{player.name}}</p>
+  {% endfor %}
+
+</div>
+
+<div class="">
+  <p></p>
+<h2>Table last matches</h2>
+<table class="">
+  <tr>
+    <th>MVP Player</th>
+    <th>Team</th>
+    <th>Game</th>
+    <th>Date</th>
+  </tr>
+  {% for player in players %}
+  <tr>
+    <td>{{player.name}}</td>
+    <td>{{player.teamName}}</td>
+    <td>{{player.gameName}}</td>
+    <td>{{player.gameTime}}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+
+</body>
+
+</html>
+
