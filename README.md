@@ -2,14 +2,14 @@
 
 ## Next steps
 
-- [ ] Create MPV of D3.js Radar graph
+- [ ] Create MVP of D3.js Radar graph
 - [ ] Create different objects and queries for visit and away players
 - [ ] Define 5 key stats:
-        - Offensive Rating
-        - Defensive Rating
-        - Efficiency(e.g. Usage + TS + AST/TO)
-        - Cluntch
-        - Hussle
+    - Offensive Rating
+    - Defensive Rating
+    - Efficiency(e.g. Usage + TS + AST/TO)
+    - Cluntch
+    - Hussle
 - [ ] Enhance AWS stats table to include the 5 key stats
 
 ## Webapp Evolution
@@ -33,7 +33,7 @@
 
 - NBA API: https://github.com/swar/nba_api/blob/master/docs/examples/LiveData.ipynb
 - SQLModels: https://sqlmodel.tiangolo.com
-- Flask webapp: https://www.youtube.com/watch?v=yBDHkveJUf4
+- Flask webapp example: https://www.youtube.com/watch?v=yBDHkveJUf4
 - Retrieve live game data: https://github.com/swar/nba_api/blob/master/docs/examples/LiveData.ipynb
 - Schedule scraping:	https://www.youtube.com/watch?v=aqnJvXOIr6g
 - AWS Security (user):	https://www.youtube.com/watch?v=Viy1tBoinl0&t=534s	
