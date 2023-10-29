@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./templates/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        rubik: ['Rubik Mono One', "monospace"]
+      }
+    },
   },
   plugins: [],
 }
