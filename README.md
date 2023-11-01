@@ -1,4 +1,20 @@
 
+## Webapp Evolution
+
+- First iteration: test endpoints from AWS in fastapi 
+
+![First iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-11%20at%2017.09.18.png?raw=true)
+
+
+- Second iteration: fetch and test template language takes objects
+
+![Second iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-12%20at%2022.22.17.png?raw=true)
+
+
+- Third iteration: test tailwind
+
+![Third iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-29%20at%2016.24.36.png?raw=true) 
+
 
 ## Next steps
 
@@ -12,21 +28,6 @@
     - Hussle
 - [ ] Enhance AWS stats table to include the 5 key stats
 
-## Webapp Evolution
-
-- First iteration:
-
-![First iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-11%20at%2017.09.18.png?raw=true)
-
-
-- Second iteration:
-
-![Second iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-12%20at%2022.22.17.png?raw=true)
-
-
-- Third iteration:
-
-![Third iteration](https://github.com/pipegalera/NBA-website-project/blob/main/static/images/evolution_website/Screenshot%202023-10-29%20at%2016.24.36.png?raw=true) 
 
 
 ## Resources
