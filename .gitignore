@@ -1,5 +1,5 @@
 credentials_aws*
-*.json
+sql/*.json
 *.pyc
 *.vscode
 **test**
