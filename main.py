@@ -5,10 +5,12 @@ from fastapi.staticfiles import StaticFiles
 from sql.mysqlSDK import get_data_aws
 import uvicorn
 import os
+from fastapi.middleware.gzip import GZipMiddleware
 
 ############ APP ##############
 app = FastAPI(debug=True, use_reloader=False)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.add_middleware(GZipMiddleware)
 
 templates = Jinja2Templates(directory="templates")
 players_info = get_data_aws(query = """
