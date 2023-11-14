@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from sql.mysqlSDK import get_data_aws
+from sql.mysql_SDK import get_data_aws
 import uvicorn
 import os
 from fastapi.middleware.gzip import GZipMiddleware
@@ -14,10 +14,10 @@ app.add_middleware(GZipMiddleware)
 
 templates = Jinja2Templates(directory="templates")
 players_info = get_data_aws(query = """
-                            SELECT personId, name, teamName, gameName, DATE_FORMAT(gameTime, "%a %D (%Y)") AS gameTime
+                            SELECT player_id, player_name, team_name, matchup, DATE_FORMAT(game_date, "%a %D (%Y)") AS game_date
                             FROM gamestats 
                             WHERE top_player = 1
-                            ORDER BY gameTime DESC, gameName
+                            ORDER BY game_date DESC, matchup
                             """)
 
 teams_logos = os.listdir(os.path.join("static/images/", "teams_logos"))

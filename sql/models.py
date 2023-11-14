@@ -1,27 +1,32 @@
-from sqlmodel import Field, SQLModel, create_engine, Session, select, SQLModel, Table
+from sqlmodel import Field, SQLModel, Session, SQLModel
 from datetime import datetime
-from mysqlSDK import aws_engine
-from typing import Optional,List
+from Tests.mysqlSDK import aws_engine
+from typing import Optional
 
 engine = aws_engine()
 
+SQLModel.metadata.clear()
+
 class GameStats(SQLModel, table=True):
-    personGameId: Optional[str] = Field(default=None, primary_key=True)
-    status: str
-    name: str
-    personId: int
-    teamName: str
-    teamId: int
-    gameName: str
-    gameId: int
-    gameTime: datetime
-    points: int
-    assists: int
-    rebounds: int
-    blocks: int
-    turnovers: int
+    player_game_id: Optional[int] = Field(default=None, primary_key=True)
+    player_name: str
+    player_id: int
+    team_name: str
+    team_abbreviation: str
+    team_id: int 
+    team_home: int
+    game_id: int
+    matchup: str
+    game_date: datetime
+    game_win: int
+    pts: int
+    ast: int
+    reb: int
+    blk: int
+    tov: int
     top_player: Optional[int] = Field(default=None)
 
 # Load tables into AWS
-SQLModel.metadata.clear()
 SQLModel.metadata.create_all(engine)
+
+
