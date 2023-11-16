@@ -3,40 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBA website</title>
   <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', path='css/output.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
+  <title>NBA website</title>
 </head>
+
 <body>
-  
-<div class = "m-8">
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo/Title -->
+      <div class="pt-2">
+        <h1 class="font-rubik text-3xl"><span class="text-yellow-500 text-7xl">MVP</span> of the game</h1>
+      </div>
+      <!-- Menu -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="font-rubik hover:text-yellow-500">Teams</a>
+        <a href="/about" class=" font-rubik hover:text-yellow-500">About</a>
+        </a>
+      </div>
+    </div>
+  </nav>
 
-<h1 class="font-rubik mb-4 text-5xl"><span class="text-yellow-600">MVP</span> of the Game</h1>
-<p class="font-rubik text-lg text-gray-500">Face-to-face player comparison. Every game, every day.</p>
-</div>
-<hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+  <!-- Subtitle -->
+  <section id="Subtitle">
+  <!-- Flex Container -->
+  <div class="container flex mx-auto px-6">
+    <h1 class="font-rubik text-3ml text-yellow-500 md:text-3xl">
+      <span class="text-stone-950">Face</span> to <span class="text-stone-950">Face</span> player comparison. Every game, every day.
+    </h1>
+  </div>
+  </section>
 
-<div class="m-8 flex flex-wrap">
-  {% for logo in teams_logos %}
-    <img src="{{ url_for('static', path='/images/teams_logos/' + logo) }}" class="image"  width="100" height="100"/>
-  {% endfor %}
-</div>
-<hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-
-<div class="grid grid-cols-2 gap-2">
+<!-- Players comparison -->
+<section id="players-comparison">
+  <!-- Flex Container -->
+  <div class="container mx-6 pt-3 px-6 grid md:grid-cols-2">
     {% for player in players %}
-      <img
-      src="static/images/players_images/{{player.personId}}.png" 
-      width="240" height="180" 
-      alt = "{{player.name}}">
+      {% include 'players_info.html' %}
     {% endfor %}
-</div>
 
-<hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+  </div>
+</section>
 
 
 </body>

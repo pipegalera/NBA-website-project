@@ -14,7 +14,9 @@ app.add_middleware(GZipMiddleware)
 
 templates = Jinja2Templates(directory="templates")
 players_info = get_data_aws(query = """
-                            SELECT player_id, player_name, team_name, matchup, DATE_FORMAT(game_date, "%a %D (%Y)") AS game_date
+                            SELECT player_id, player_name, team_name, 
+                                   pts,
+                                   matchup, DATE_FORMAT(game_date, "%a %D (%Y)") AS game_date
                             FROM gamestats 
                             WHERE top_player = 1
                             ORDER BY game_date DESC, matchup
